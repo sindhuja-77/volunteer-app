@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volunteer Registration Teach For India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>Teach For India</h2>
+    <nav>
+      <a href="index.html" class="active">Personal Info</a>
+      <a href="other-details.html">Other Details</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Volunteer Registration</h1>
+    <p class="subtitle">
+      Please provide your contact information to register as a volunteer.
+    </p>
+
+    <form onsubmit="saveContact(); return false;">
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@email.com"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input
+          type="tel"
+          id="contact"
+          placeholder="10-digit mobile number"
+          pattern="[0-9]{10}"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input
+          type="date"
+          id="dob"
+          required
+        >
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">
+          Next →
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
