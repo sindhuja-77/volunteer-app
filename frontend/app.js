@@ -25,10 +25,11 @@ function submitDetails() {
   volunteer.availability = [...document.querySelectorAll('.day:checked')]
     .map(cb => cb.value);
 
-  fetch('http://localhost:5000/api/volunteer', {
+  fetch('https://volunteer-app-7.onrender.com/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(volunteer)
   })
   .then(() => alert('Registration Successful'));
 }
+
