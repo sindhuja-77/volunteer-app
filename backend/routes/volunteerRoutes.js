@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Volunteer = require('../models/Volunteer');
+const Volunteer = require('../models/volunteer');
 
 // Save volunteer data
 router.post('/', async (req, res) => {
@@ -20,3 +20,4 @@ router.get('/', async (req, res) => {
 });
 
 module.exports = router;
+
